@@ -1,0 +1,16 @@
+*{
+    padding: 2px;
+    margin:1%;
+    box-sizing:border-box;
+}
+    header H1{
+    font-size:24px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: Blue;
+    border: 10px  #24e0a1;
+    text-align: left;
+    border-radius: 10px;
+
+    
+}
