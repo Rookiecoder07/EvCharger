@@ -1,16 +1,278 @@
-*{
-    padding: 2px;
-    margin:1%;
-    box-sizing:border-box;
-}
-    header H1{
-    font-size:24px;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-    color: Blue;
-    border: 10px  #24e0a1;
-    text-align: left;
-    border-radius: 10px;
+/* ------------------------------
+   General Styling
+------------------------------ */
 
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    color: #222;
+    min-height: 100vh;
+}
+
+
+/* ------------------------------
+   Header
+------------------------------ */
+
+header {
+    width: 98%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px 35px;
+
+    background: linear-gradient(
+        145deg,
+        #197e87,
+        #0f5132
+    );
+
+    color: white;
+    border-radius: 18px;
+
+    /* 3D depth */
+    box-shadow:
+        8px 8px 0px #083c25,
+        12px 12px 20px rgba(2, 87, 102, 0.25);
+
+    position: relative;
+    transform: perspective(700px) rotateX(2deg);
+
+    overflow: hidden;
+}
+
+/* 3D highlight */
+header::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 45%;
+
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.18),transparent);
+
+    pointer-events: none;
+}
+
+header h1 {
+    position: relative;
+    z-index: 1;
+
+    margin: 0;
+
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    text-shadow:
+        2px 2px 0px #083c25,
+        4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* ------------------------------
+   Main Container
+------------------------------ */
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+
+/* ------------------------------
+   EV Points Card
+------------------------------ */
+
+.points-card {
+    background: linear-gradient(135deg, #198754, #0f5132);
+    color: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 25px;
+}
+
+.points-card p:first-child {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.points-card h2 {
+    font-size: 42px;
+    margin: 8px 0;
+}
+
+.points-card p:last-child {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+
+/* ------------------------------
+   Quick Actions
+------------------------------ */
+
+.quick-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.action {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.action:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+}
+
+.action span {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.action p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+/* ------------------------------
+   Section Headings
+------------------------------ */
+
+section > h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #173b2b;
+}
+
+
+/* ------------------------------
+   Favorite Station
+------------------------------ */
+
+.station {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border-left: 5px solid #198754;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+}
+
+.station:hover {
+    transform: translateX(5px);
+}
+
+.station h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.station p {
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* ------------------------------
+   Recent Activity
+------------------------------ */
+
+.activity {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.activity p {
+    font-size: 15px;
+    color: #333;
+}
+
+.activity span {
+    color: #198754;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+/* ------------------------------
+   Mobile Responsive
+------------------------------ */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    main {
+        width: 92%;
+        margin-top: 20px;
+    }
+
+    .points-card {
+        padding: 25px;
+    }
+
+    .points-card h2 {
+        font-size: 36px;
+    }
+
+    .quick-actions {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .action {
+        padding: 18px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        text-align: left;
+    }
+
+    .action span {
+        margin: 0;
+        font-size: 25px;
+    }
+
+    section > h2 {
+        font-size: 20px;
+    }
+
+    .activity {
+        padding: 16px;
+    }
 }
