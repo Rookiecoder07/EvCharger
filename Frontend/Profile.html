@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EVCharge - Profile</title>
+    <link rel = "stylesheet"  href="profile.css">
+   
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ⚡ EVCharge
+        </div>
+
+        <div class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="Wallet.html">My Wallets</a>
+            <a href="profile.html">Profile</a>
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         PROFILE PAGE
+    ========================== -->
+
+    <main class="profile-page">
+
+        <!-- PROFILE HEADER -->
+
+        <section class="profile-header">
+
+            <div class="profile-image-section">
+
+                <img
+                    src="image/manjeet.png"
+                    alt="Profile picture"
+                    class="profile-image"
+                >
+
+                <button class="change-photo-btn">
+                    Change Photo
+                </button>
+
+            </div>
+
+
+            <div class="profile-basic-info">
+
+                <h1>Manjeet Kumar</h1>
+
+                <p>manjeet@example.com</p>
+
+                <p>+91 98765 43210</p>
+
+                <span class="account-status">
+                    ✓ Verified Account
+                </span>
+
+            </div>
+
+
+            <button class="edit-profile-btn">
+                Edit Profile
+            </button>
+
+        </section>
+
+
+        <!-- PERSONAL INFORMATION -->
+
+        <section class="profile-section">
+
+            <div class="section-header">
+
+                <h2>Personal Information</h2>
+
+                <button>Edit</button>
+
+            </div>
+
+
+            <div class="profile-details">
+
+                <div class="detail-item">
+                    <span class="detail-label">Full Name</span>
+                    <span class="detail-value">Manjeet Kumar</span>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Email</span>
+                    <span class="detail-value">manjeet@example.com</span>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Phone</span>
+                    <span class="detail-value">+91 98765 43210</span>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">Greater Noida, India</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MY VEHICLE -->
+
+        <section class="profile-section">
+
+            <div class="section-header">
+
+                <h2>My Vehicle</h2>
+
+                <button>+ Add Vehicle</button>
+
+            </div>
+
+
+            <article class="vehicle-card">
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="image/ev.jpg"
+                        alt="Electric vehicle"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-info">
+
+                    <h3>Tata Nexon EV</h3>
+
+                    <p><strong>Battery:</strong> 40.5 kWh</p>
+
+                    <p><strong>Connector:</strong> CCS2</p>
+
+                    <p><strong>Charging:</strong> DC Fast Charging</p>
+
+                    <p><strong>Current Battery:</strong> 62%</p>
+
+                    <p><strong>Estimated Range:</strong> 210 km</p>
+
+                </div>
+
+
+                <div class="vehicle-actions">
+
+                    <button>Edit</button>
+
+                    <button>Remove</button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- CHARGING PREFERENCES -->
+
+        <section class="profile-section">
+
+            <div class="section-header">
+
+                <h2>Charging Preferences</h2>
+
+                <button>Edit</button>
+
+            </div>
+
+
+            <div class="preferences-list">
+
+                <div class="preference-item">
+                    <span>Preferred Connector</span>
+                    <strong>CCS2</strong>
+                </div>
+
+                <div class="preference-item">
+                    <span>Minimum Charging Power</span>
+                    <strong>30 kW</strong>
+                </div>
+
+                <div class="preference-item">
+                    <span>Maximum Price</span>
+                    <strong>₹15 / kWh</strong>
+                </div>
+
+                <div class="preference-item">
+                    <span>Fast Charging</span>
+                    <strong>Enabled</strong>
+                </div>
+
+                <div class="preference-item">
+                    <span>Private Chargers</span>
+                    <strong>Enabled</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHARGING OVERVIEW -->
+
+        <section class="profile-section">
+
+            <h2>Charging Overview</h2>
+
+            <div class="charging-statistics">
+
+                <div class="stat-card">
+                    <span class="stat-icon">⚡</span>
+                    <h3>24</h3>
+                    <p>Total Sessions</p>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon">🔋</span>
+                    <h3>386 kWh</h3>
+                    <p>Energy Consumed</p>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon">₹</span>
+                    <h3>₹4,820</h3>
+                    <p>Total Spent</p>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon">🌱</span>
+                    <h3>128 kg</h3>
+                    <p>CO₂ Saved</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- UPCOMING BOOKINGS -->
+
+        <section class="profile-section">
+
+            <div class="section-header">
+
+                <h2>Upcoming Bookings</h2>
+
+                <a href="bookings.html">View All</a>
+
+            </div>
+
+
+            <article class="booking-card">
+
+                <div class="booking-info">
+
+                    <h3>GreenCharge Station</h3>
+
+                    <p>📍 2.4 km away</p>
+
+                    <p>⚡ 60 kW DC Fast Charger</p>
+
+                </div>
+
+
+                <div class="booking-time">
+
+                    <strong>Today</strong>
+
+                    <span>7:30 PM</span>
+
+                </div>
+
+
+                <div class="booking-status">
+                    Confirmed
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- SAVED CHARGERS -->
+
+        <section class="profile-section">
+
+            <div class="section-header">
+
+                <h2>Saved Chargers</h2>
+
+                <a href="saved-chargers.html">View All</a>
+
+            </div>
+
+
+            <article class="charger-card">
+
+                <div>
+
+                    <h3>GreenCharge Station</h3>
+
+                    <p>2.4 km away</p>
+
+                    <p>60 kW • ₹12/kWh</p>
+
+                </div>
+
+                <button>♥</button>
+
+            </article>
+
+
+            <article class="charger-card">
+
+                <div>
+
+                    <h3>Highway EV Point</h3>
+
+                    <p>8.7 km away</p>
+
+                    <p>120 kW • ₹15/kWh</p>
+
+                </div>
+
+                <button>♥</button>
+
+            </article>
+
+        </section>
+
+
+        <!-- MY CHARGERS - OWNER -->
+
+        <section class="profile-section charger-owner-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>My Chargers</h2>
+
+                    <p style="color:#89968e; margin-top:5px;">
+                        Manage chargers you share with the EV community.
+                    </p>
+
+                </div>
+
+                <button>+ Add Charger</button>
+
+            </div>
+
+
+            <article class="my-charger-card">
+
+                <div>
+
+                    <h3>Home EV Charger</h3>
+
+                    <p>📍 Greater Noida</p>
+
+                    <p>⚡ 7.4 kW</p>
+
+                    <p>💰 ₹10 / kWh</p>
+
+                </div>
+
+
+                <div class="charger-status">
+                    ● Active
+                </div>
+
+
+                <div class="charger-actions">
+
+                    <button>Manage</button>
+
+                    <button>Disable</button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- NOTIFICATIONS -->
+
+        <section class="profile-section">
+
+            <div class="section-header">
+
+                <h2>Notifications</h2>
+
+                <a href="#">Manage</a>
+
+            </div>
+
+
+            <div class="notification-settings">
+
+                <label class="setting-item">
+                    <span>Booking Reminders</span>
+                    <input type="checkbox" checked>
+                </label>
+
+                <label class="setting-item">
+                    <span>Charging Completed</span>
+                    <input type="checkbox" checked>
+                </label>
+
+                <label class="setting-item">
+                    <span>Charger Availability</span>
+                    <input type="checkbox" checked>
+                </label>
+
+                <label class="setting-item">
+                    <span>Price Alerts</span>
+                    <input type="checkbox">
+                </label>
+
+                <label class="setting-item">
+                    <span>Promotional Notifications</span>
+                    <input type="checkbox">
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAYMENTS -->
+
+        <section class="profile-section">
+
+            <div class="section-header">
+
+                <h2>Payments</h2>
+
+                <a href="#">View Payment History</a>
+
+            </div>
+
+
+            <div class="payment-summary">
+
+                <div class="payment-method">
+
+                    <span>Default Payment Method</span>
+
+                    <strong>UPI</strong>
+
+                </div>
+
+                <button>
+                    Manage Payment Methods
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECURITY -->
+
+        <section class="profile-section">
+
+            <div class="section-header">
+
+                <h2>Security & Privacy</h2>
+
+            </div>
+
+
+            <div class="settings-list">
+
+                <button class="settings-item">
+                    <a href ="forgot_pass.html">🔐 Change Password </a>
+                   
+                </button>
+
+                <button class="settings-item">
+                    <span>📱 Phone & Email</span>
+                    <span>›</span>
+                </button>
+
+                <button class="settings-item">
+                    <span>🛡️ Two-Factor Authentication</span>
+                    <span>›</span>
+                </button>
+
+                <button class="settings-item">
+                    <span>🔒 Privacy Settings</span>
+                    <span>›</span>
+                </button>
+
+                <button class="settings-item danger">
+                    <span>Delete Account</span>
+                    <span>›</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- HELP -->
+
+        <section class="profile-section">
+
+            <div class="section-header">
+                <h2>Help & Contact</h2>
+            </div>
+
+
+            <div class="help-options">
+
+                <a href="#">
+                    <span>❓</span>
+                    <div>
+                        <strong>Help Center</strong>
+                        <p>Find answers to common questions.</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <span>📞</span>
+                    <div>
+                        <strong>Contact Us</strong>
+                        <p>Get in touch with our support team.</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <span>🚨</span>
+                    <div>
+                        <strong>Report a Problem</strong>
+                        <p>Report an issue with a charger or booking.</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <span>💬</span>
+                    <div>
+                        <strong>Send Feedback</strong>
+                        <p>Help us improve the EV charging experience.</p>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section class="profile-section">
+
+            <div class="section-header">
+                <h2>About</h2>
+            </div>
+
+
+            <div class="about-options">
+
+                <a href="#">About EVCharge</a>
+
+                <a href="#">Terms & Conditions</a>
+
+                <a href="#">Privacy Policy</a>
+
+                <span>App Version 1.0.0</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- SIGN OUT -->
+
+        <section class="profile-actions">
+
+            <button class="sign-out-btn">
+                🚪 Sign Out
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 EVCharge — Smart EV Charging Platform
+
+    </footer>
+
+
+</body>
+</html>
